@@ -33,13 +33,13 @@ Since it uses polygons algorithm the accuracy is not guaranteed for short ranges
 
 ### Example 
 
-Checkout example project at APReverseGeocodingExample folder
+Checkout example project at APReverseGeocodingExample folder.
 
 ![image](/Screenshots/1.png)
 
 ### Contribution
 
-Feel free to place issues and pull requests
+Feel free to place issues and pull requests.
 
 ### License
 The MIT License (MIT)
