@@ -1,0 +1,18 @@
+language: objective-c
+rvm: 1.9.3
+before_install:
+- export LANG=en_US.UTF-8
+- brew update
+- brew uninstall xctool
+- brew install xctool
+script:
+- cd APReverseGeocodingExample
+- xctool -project APReverseGeocodingExample.xcodeproj -scheme APReverseGeocodingExample -sdk iphonesimulator
+- xctool test -project APReverseGeocodingExample.xcodeproj -scheme APReverseGeocodingExample -sdk iphonesimulator
+  ONLY_ACTIVE_ARCH=NO
+notifications:
+  email:
+    recipients:
+    - sergey@alterplay.com
+    on_success: change
+    on_failure: always
