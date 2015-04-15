@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "Offline reverse geocoding library written in Objective-C"
   s.homepage     = "https://github.com/Alterplay/APOfflineReverseGeocoding"
-  s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Serg Krivoblotsky" => "krivoblotsky@me.com" }
   s.source       = { :git => "https://github.com/Alterplay/APOfflineReverseGeocoding.git",
 		                 :tag => s.version.to_s }
