@@ -1,7 +1,7 @@
+[![Build Status](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding.svg?branch=master)](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding)
+
 # APOfflineReverseGeocoding
 Offline reverse geocoding library written in Objective-C
-
-[![Build Status](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding.svg?branch=master)](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding)
 
 ### Usage
 ```objc
