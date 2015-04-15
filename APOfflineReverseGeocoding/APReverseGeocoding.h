@@ -27,7 +27,7 @@
  *
  *  @return APReverseGeocoding
  */
-+ (instancetype)geocodingWithGeoJSONURL:(NSURL *)url __attribute__((nonnull ()));
++ (instancetype)geocodingWithGeoJSONURL:(NSURL *)url __attribute__((nonnull));
 
 /**
  *  Designated initializer.
@@ -36,7 +36,7 @@
  *
  *  @return APReverseGeocoding
  */
-- (instancetype)initWithGeoJSONURL:(NSURL *)url __attribute__((nonnull ())) NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithGeoJSONURL:(NSURL *)url __attribute__((nonnull)) NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, strong, readonly) NSURL *url;
 
