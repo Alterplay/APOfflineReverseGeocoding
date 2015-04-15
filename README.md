@@ -1,6 +1,8 @@
 # APOfflineReverseGeocoding
 Offline reverse geocoding library written in Objective-C
 
+[![Build Status](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding.svg?branch=master)](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding)
+
 ### Usage
 ```objc
 CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(48.296054999999996, 31.223209000000058);
