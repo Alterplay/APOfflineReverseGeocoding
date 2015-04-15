@@ -1,8 +1,37 @@
 # APOfflineReverseGeocoding
 Offline reverse geocoding library written in Objective-C
 
+### Usage
+```objc
+CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(48.296054999999996, 31.223209000000058);
+APReverseGeocoding *reverseGeocoding = [APReverseGeocoding defaultGeocoding];
+APCountry *country = [reverseGeocoding geocodeCountryWithCoordinate:coordinate];
+
+NSLog(@"%@", country.code);
+NSLog(@"%@", country.shortCode);
+NSLog(@"%@", country.name);
+```
+Output:
+```
+UKR
+UA
+Ukraine
+```
+### Algorithm
+
+http://www.ecse.rpi.edu/Homepages/wrf/Research/Short_Notes/pnpoly.html
+
 ### Inspiration and data
+
 https://github.com/johan/world.geo.json
+
+### Notes
+
+Since it uses polygons algorithm the accuracy is not guaranteed for short ranges.
+
+### Contribution
+
+Feel free to place issues and pull requests
 
 ### License
 The MIT License (MIT)
