@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A72C0B1C1ADE640A003C3725 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B1B1ADE640A003C3725 /* main.m */; };
+		A72C0B1F1ADE640A003C3725 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B1E1ADE640A003C3725 /* AppDelegate.m */; };
+		A72C0B221ADE640A003C3725 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B211ADE640A003C3725 /* ViewController.m */; };
+		A72C0B251ADE640A003C3725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B231ADE640A003C3725 /* Main.storyboard */; };
+		A72C0B271ADE640A003C3725 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B261ADE640A003C3725 /* Images.xcassets */; };
+		A72C0B2A1ADE640A003C3725 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B281ADE640A003C3725 /* LaunchScreen.xib */; };
+		A72C0B361ADE640B003C3725 /* APReverseGeocodingExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */; };
+		A72C0B431ADE6437003C3725 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B421ADE6437003C3725 /* dummy.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A72C0B301ADE640B003C3725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A72C0B0E1ADE640A003C3725 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A72C0B151ADE640A003C3725;
+			remoteInfo = APReverseGeocodingExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A72C0B161ADE640A003C3725 /* APReverseGeocodingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APReverseGeocodingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72C0B1A1ADE640A003C3725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72C0B1B1ADE640A003C3725 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A72C0B1D1ADE640A003C3725 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A72C0B1E1ADE640A003C3725 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A72C0B201ADE640A003C3725 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A72C0B211ADE640A003C3725 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A72C0B241ADE640A003C3725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A72C0B261ADE640A003C3725 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A72C0B291ADE640A003C3725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A72C0B2F1ADE640B003C3725 /* APReverseGeocodingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APReverseGeocodingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72C0B341ADE640B003C3725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APReverseGeocodingExampleTests.m; sourceTree = "<group>"; };
+		A72C0B421ADE6437003C3725 /* dummy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A72C0B131ADE640A003C3725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72C0B2C1ADE640B003C3725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A72C0B0D1ADE640A003C3725 = {
+			isa = PBXGroup;
+			children = (
+				A72C0B411ADE6437003C3725 /* APOfflineReverseGeocoding */,
+				A72C0B181ADE640A003C3725 /* APReverseGeocodingExample */,
+				A72C0B321ADE640B003C3725 /* APReverseGeocodingExampleTests */,
+				A72C0B171ADE640A003C3725 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A72C0B171ADE640A003C3725 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B161ADE640A003C3725 /* APReverseGeocodingExample.app */,
+				A72C0B2F1ADE640B003C3725 /* APReverseGeocodingExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A72C0B181ADE640A003C3725 /* APReverseGeocodingExample */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B1D1ADE640A003C3725 /* AppDelegate.h */,
+				A72C0B1E1ADE640A003C3725 /* AppDelegate.m */,
+				A72C0B201ADE640A003C3725 /* ViewController.h */,
+				A72C0B211ADE640A003C3725 /* ViewController.m */,
+				A72C0B231ADE640A003C3725 /* Main.storyboard */,
+				A72C0B261ADE640A003C3725 /* Images.xcassets */,
+				A72C0B281ADE640A003C3725 /* LaunchScreen.xib */,
+				A72C0B191ADE640A003C3725 /* Supporting Files */,
+			);
+			path = APReverseGeocodingExample;
+			sourceTree = "<group>";
+		};
+		A72C0B191ADE640A003C3725 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B1A1ADE640A003C3725 /* Info.plist */,
+				A72C0B1B1ADE640A003C3725 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A72C0B321ADE640B003C3725 /* APReverseGeocodingExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */,
+				A72C0B331ADE640B003C3725 /* Supporting Files */,
+			);
+			path = APReverseGeocodingExampleTests;
+			sourceTree = "<group>";
+		};
+		A72C0B331ADE640B003C3725 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B341ADE640B003C3725 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A72C0B411ADE6437003C3725 /* APOfflineReverseGeocoding */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B421ADE6437003C3725 /* dummy.txt */,
+			);
+			name = APOfflineReverseGeocoding;
+			path = ../APOfflineReverseGeocoding;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A72C0B151ADE640A003C3725 /* APReverseGeocodingExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72C0B391ADE640B003C3725 /* Build configuration list for PBXNativeTarget "APReverseGeocodingExample" */;
+			buildPhases = (
+				A72C0B121ADE640A003C3725 /* Sources */,
+				A72C0B131ADE640A003C3725 /* Frameworks */,
+				A72C0B141ADE640A003C3725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APReverseGeocodingExample;
+			productName = APReverseGeocodingExample;
+			productReference = A72C0B161ADE640A003C3725 /* APReverseGeocodingExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A72C0B2E1ADE640B003C3725 /* APReverseGeocodingExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A72C0B3C1ADE640B003C3725 /* Build configuration list for PBXNativeTarget "APReverseGeocodingExampleTests" */;
+			buildPhases = (
+				A72C0B2B1ADE640B003C3725 /* Sources */,
+				A72C0B2C1ADE640B003C3725 /* Frameworks */,
+				A72C0B2D1ADE640B003C3725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72C0B311ADE640B003C3725 /* PBXTargetDependency */,
+			);
+			name = APReverseGeocodingExampleTests;
+			productName = APReverseGeocodingExampleTests;
+			productReference = A72C0B2F1ADE640B003C3725 /* APReverseGeocodingExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A72C0B0E1ADE640A003C3725 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Sergii Kryvoblotskyi";
+				TargetAttributes = {
+					A72C0B151ADE640A003C3725 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					A72C0B2E1ADE640B003C3725 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = A72C0B151ADE640A003C3725;
+					};
+				};
+			};
+			buildConfigurationList = A72C0B111ADE640A003C3725 /* Build configuration list for PBXProject "APReverseGeocodingExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A72C0B0D1ADE640A003C3725;
+			productRefGroup = A72C0B171ADE640A003C3725 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A72C0B151ADE640A003C3725 /* APReverseGeocodingExample */,
+				A72C0B2E1ADE640B003C3725 /* APReverseGeocodingExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A72C0B141ADE640A003C3725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72C0B251ADE640A003C3725 /* Main.storyboard in Resources */,
+				A72C0B2A1ADE640A003C3725 /* LaunchScreen.xib in Resources */,
+				A72C0B271ADE640A003C3725 /* Images.xcassets in Resources */,
+				A72C0B431ADE6437003C3725 /* dummy.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72C0B2D1ADE640B003C3725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A72C0B121ADE640A003C3725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72C0B221ADE640A003C3725 /* ViewController.m in Sources */,
+				A72C0B1F1ADE640A003C3725 /* AppDelegate.m in Sources */,
+				A72C0B1C1ADE640A003C3725 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72C0B2B1ADE640B003C3725 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A72C0B361ADE640B003C3725 /* APReverseGeocodingExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72C0B311ADE640B003C3725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A72C0B151ADE640A003C3725 /* APReverseGeocodingExample */;
+			targetProxy = A72C0B301ADE640B003C3725 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A72C0B231ADE640A003C3725 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72C0B241ADE640A003C3725 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A72C0B281ADE640A003C3725 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A72C0B291ADE640A003C3725 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A72C0B371ADE640B003C3725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A72C0B381ADE640B003C3725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A72C0B3A1ADE640B003C3725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = APReverseGeocodingExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A72C0B3B1ADE640B003C3725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = APReverseGeocodingExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A72C0B3D1ADE640B003C3725 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = APReverseGeocodingExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APReverseGeocodingExample.app/APReverseGeocodingExample";
+			};
+			name = Debug;
+		};
+		A72C0B3E1ADE640B003C3725 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = APReverseGeocodingExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APReverseGeocodingExample.app/APReverseGeocodingExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A72C0B111ADE640A003C3725 /* Build configuration list for PBXProject "APReverseGeocodingExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72C0B371ADE640B003C3725 /* Debug */,
+				A72C0B381ADE640B003C3725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A72C0B391ADE640B003C3725 /* Build configuration list for PBXNativeTarget "APReverseGeocodingExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72C0B3A1ADE640B003C3725 /* Debug */,
+				A72C0B3B1ADE640B003C3725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A72C0B3C1ADE640B003C3725 /* Build configuration list for PBXNativeTarget "APReverseGeocodingExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72C0B3D1ADE640B003C3725 /* Debug */,
+				A72C0B3E1ADE640B003C3725 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A72C0B0E1ADE640A003C3725 /* Project object */;
+}
