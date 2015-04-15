@@ -14,7 +14,12 @@
 		A72C0B271ADE640A003C3725 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B261ADE640A003C3725 /* Images.xcassets */; };
 		A72C0B2A1ADE640A003C3725 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B281ADE640A003C3725 /* LaunchScreen.xib */; };
 		A72C0B361ADE640B003C3725 /* APReverseGeocodingExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */; };
-		A72C0B431ADE6437003C3725 /* dummy.txt in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B421ADE6437003C3725 /* dummy.txt */; };
+		A72C0B461ADE6477003C3725 /* APReverseGeocoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B451ADE6477003C3725 /* APReverseGeocoding.m */; };
+		A72C0B491ADE649E003C3725 /* APCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B481ADE649E003C3725 /* APCountry.m */; };
+		A72C0B4B1ADE6618003C3725 /* APCountryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B4A1ADE6618003C3725 /* APCountryTests.m */; };
+		A72C0B4E1ADE6A68003C3725 /* countries.geo.json in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B4D1ADE6A68003C3725 /* countries.geo.json */; };
+		A72C0B501ADE6AEE003C3725 /* APReverseGeocodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B4F1ADE6AEE003C3725 /* APReverseGeocodingTests.m */; };
+		A72C0B511ADE6B48003C3725 /* countries.geo.json in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B4D1ADE6A68003C3725 /* countries.geo.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +46,13 @@
 		A72C0B2F1ADE640B003C3725 /* APReverseGeocodingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APReverseGeocodingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72C0B341ADE640B003C3725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APReverseGeocodingExampleTests.m; sourceTree = "<group>"; };
-		A72C0B421ADE6437003C3725 /* dummy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dummy.txt; sourceTree = "<group>"; };
+		A72C0B441ADE6477003C3725 /* APReverseGeocoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APReverseGeocoding.h; sourceTree = "<group>"; };
+		A72C0B451ADE6477003C3725 /* APReverseGeocoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReverseGeocoding.m; sourceTree = "<group>"; };
+		A72C0B471ADE649E003C3725 /* APCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCountry.h; sourceTree = "<group>"; };
+		A72C0B481ADE649E003C3725 /* APCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountry.m; sourceTree = "<group>"; };
+		A72C0B4A1ADE6618003C3725 /* APCountryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountryTests.m; sourceTree = "<group>"; };
+		A72C0B4D1ADE6A68003C3725 /* countries.geo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.geo.json; sourceTree = "<group>"; };
+		A72C0B4F1ADE6AEE003C3725 /* APReverseGeocodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReverseGeocodingTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */,
+				A72C0B4A1ADE6618003C3725 /* APCountryTests.m */,
+				A72C0B4F1ADE6AEE003C3725 /* APReverseGeocodingTests.m */,
 				A72C0B331ADE640B003C3725 /* Supporting Files */,
 			);
 			path = APReverseGeocodingExampleTests;
@@ -125,10 +138,22 @@
 		A72C0B411ADE6437003C3725 /* APOfflineReverseGeocoding */ = {
 			isa = PBXGroup;
 			children = (
-				A72C0B421ADE6437003C3725 /* dummy.txt */,
+				A72C0B4C1ADE6A49003C3725 /* GeoJSON */,
+				A72C0B441ADE6477003C3725 /* APReverseGeocoding.h */,
+				A72C0B451ADE6477003C3725 /* APReverseGeocoding.m */,
+				A72C0B471ADE649E003C3725 /* APCountry.h */,
+				A72C0B481ADE649E003C3725 /* APCountry.m */,
 			);
 			name = APOfflineReverseGeocoding;
 			path = ../APOfflineReverseGeocoding;
+			sourceTree = "<group>";
+		};
+		A72C0B4C1ADE6A49003C3725 /* GeoJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B4D1ADE6A68003C3725 /* countries.geo.json */,
+			);
+			path = GeoJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +239,7 @@
 				A72C0B251ADE640A003C3725 /* Main.storyboard in Resources */,
 				A72C0B2A1ADE640A003C3725 /* LaunchScreen.xib in Resources */,
 				A72C0B271ADE640A003C3725 /* Images.xcassets in Resources */,
-				A72C0B431ADE6437003C3725 /* dummy.txt in Resources */,
+				A72C0B4E1ADE6A68003C3725 /* countries.geo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72C0B511ADE6B48003C3725 /* countries.geo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +261,8 @@
 				A72C0B221ADE640A003C3725 /* ViewController.m in Sources */,
 				A72C0B1F1ADE640A003C3725 /* AppDelegate.m in Sources */,
 				A72C0B1C1ADE640A003C3725 /* main.m in Sources */,
+				A72C0B491ADE649E003C3725 /* APCountry.m in Sources */,
+				A72C0B461ADE6477003C3725 /* APReverseGeocoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72C0B501ADE6AEE003C3725 /* APReverseGeocodingTests.m in Sources */,
 				A72C0B361ADE640B003C3725 /* APReverseGeocodingExampleTests.m in Sources */,
+				A72C0B4B1ADE6618003C3725 /* APCountryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
