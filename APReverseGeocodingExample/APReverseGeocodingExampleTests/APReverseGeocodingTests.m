@@ -24,6 +24,7 @@
     XCTAssertEqual(geocoding.url, url);
 }
 
+/* Multipolygon */
 - (void)testNewYorkCoordinatesGeocodesUSA
 {
     CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(40.7142700, -74.0059700);
@@ -31,6 +32,16 @@
     APCountry *country = [geocoding geocodeCountryWithCoordinate:coordinate];
     
     XCTAssertTrue([country.code isEqualToString:@"USA"]);
+}
+
+/* Polygon */
+- (void)testKievCoordinatesGeocodesUkraine
+{
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(50.4546600, 30.5238000);
+    APReverseGeocoding *geocoding = [APReverseGeocoding defaultGeocoding];
+    APCountry *country = [geocoding geocodeCountryWithCoordinate:coordinate];
+    
+    XCTAssertTrue([country.code isEqualToString:@"UKR"]);
 }
 
 - (void)testPerformanceNewYorkGeocoding {

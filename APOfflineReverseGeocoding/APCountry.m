@@ -7,6 +7,7 @@
 //
 
 #import "APCountry.h"
+#import "APCountryCodeImporter.h"
 
 @implementation APCountry
 
@@ -20,7 +21,8 @@
     self = [super init];
     if (self) {
         _code = dictionary[@"id"];
-        _name = dictionary[@"name"];
+        _shortCode = [APCountryCodeImporter importShortCountryCodeWithCode:_code];
+        _name = dictionary[@"properties"][@"name"];
     }
     return self;
 }

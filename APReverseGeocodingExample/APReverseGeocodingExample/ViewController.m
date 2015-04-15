@@ -7,21 +7,31 @@
 //
 
 #import "ViewController.h"
+#import <MapKit/MapKit.h>
+#import "APReverseGeocoding.h"
 
-@interface ViewController ()
+@interface ViewController () <MKMapViewDelegate>
+
+@property (nonatomic, strong) APReverseGeocoding *reverseGeocoding;
+@property (strong, nonatomic) IBOutlet UILabel *countryNameLabel;
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _reverseGeocoding = [APReverseGeocoding defaultGeocoding];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - MKMapViewDelegate
+
+- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
+{
+    CLLocationCoordinate2D centre = [mapView centerCoordinate];
+    APCountry *country = [self.reverseGeocoding geocodeCountryWithCoordinate:centre];
+    self.countryNameLabel.text = country.name;
 }
 
 @end

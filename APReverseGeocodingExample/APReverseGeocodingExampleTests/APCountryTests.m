@@ -16,15 +16,16 @@
 
 @implementation APCountryTests
 
-- (void)testAPCountryImported {
+- (void)testCountryImported {
     
-    NSString *countryId = @"foo";
-    NSString *countryName = @"bar";
+    NSString *countryId = @"USA";
+    NSString *countryName = @"United States";
     
-    NSDictionary *geoDictionary = @{@"id":countryId, @"name": countryName};
+    NSDictionary *geoDictionary = @{@"id":countryId, @"properties":@{@"name":countryName}};
     
     APCountry *country = [APCountry countryWithGEODictionary:geoDictionary];
     XCTAssertEqual(country.code, countryId);
+    XCTAssertTrue([country.shortCode isEqualToString:country.shortCode]);
     XCTAssertEqual(country.name, countryName);
 }
 

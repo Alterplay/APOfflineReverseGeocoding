@@ -20,6 +20,11 @@
 		A72C0B4E1ADE6A68003C3725 /* countries.geo.json in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B4D1ADE6A68003C3725 /* countries.geo.json */; };
 		A72C0B501ADE6AEE003C3725 /* APReverseGeocodingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B4F1ADE6AEE003C3725 /* APReverseGeocodingTests.m */; };
 		A72C0B511ADE6B48003C3725 /* countries.geo.json in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B4D1ADE6A68003C3725 /* countries.geo.json */; };
+		A72C0B591ADE7764003C3725 /* APPolygonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B581ADE7764003C3725 /* APPolygonTests.m */; };
+		A72C0B5B1ADE7D0E003C3725 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72C0B5A1ADE7D0E003C3725 /* MapKit.framework */; };
+		A72C0B5F1ADE7D35003C3725 /* APPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B5E1ADE7D35003C3725 /* APPolygon.m */; };
+		A72C0B621ADE8642003C3725 /* APCountryCodeImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B611ADE8642003C3725 /* APCountryCodeImporter.m */; };
+		A72C0B641ADE86B5003C3725 /* APCountryCodeImporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B631ADE86B5003C3725 /* APCountryCodeImporterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		A72C0B4A1ADE6618003C3725 /* APCountryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountryTests.m; sourceTree = "<group>"; };
 		A72C0B4D1ADE6A68003C3725 /* countries.geo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.geo.json; sourceTree = "<group>"; };
 		A72C0B4F1ADE6AEE003C3725 /* APReverseGeocodingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReverseGeocodingTests.m; sourceTree = "<group>"; };
+		A72C0B581ADE7764003C3725 /* APPolygonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPolygonTests.m; sourceTree = "<group>"; };
+		A72C0B5A1ADE7D0E003C3725 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A72C0B5D1ADE7D35003C3725 /* APPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPolygon.h; sourceTree = "<group>"; };
+		A72C0B5E1ADE7D35003C3725 /* APPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPolygon.m; sourceTree = "<group>"; };
+		A72C0B601ADE8642003C3725 /* APCountryCodeImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCountryCodeImporter.h; sourceTree = "<group>"; };
+		A72C0B611ADE8642003C3725 /* APCountryCodeImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountryCodeImporter.m; sourceTree = "<group>"; };
+		A72C0B631ADE86B5003C3725 /* APCountryCodeImporterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountryCodeImporterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72C0B5B1ADE7D0E003C3725 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +123,7 @@
 		A72C0B191ADE640A003C3725 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A72C0B5A1ADE7D0E003C3725 /* MapKit.framework */,
 				A72C0B1A1ADE640A003C3725 /* Info.plist */,
 				A72C0B1B1ADE640A003C3725 /* main.m */,
 			);
@@ -121,6 +135,8 @@
 			children = (
 				A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */,
 				A72C0B4A1ADE6618003C3725 /* APCountryTests.m */,
+				A72C0B581ADE7764003C3725 /* APPolygonTests.m */,
+				A72C0B631ADE86B5003C3725 /* APCountryCodeImporterTests.m */,
 				A72C0B4F1ADE6AEE003C3725 /* APReverseGeocodingTests.m */,
 				A72C0B331ADE640B003C3725 /* Supporting Files */,
 			);
@@ -138,6 +154,7 @@
 		A72C0B411ADE6437003C3725 /* APOfflineReverseGeocoding */ = {
 			isa = PBXGroup;
 			children = (
+				A72C0B5C1ADE7D35003C3725 /* Internal */,
 				A72C0B4C1ADE6A49003C3725 /* GeoJSON */,
 				A72C0B441ADE6477003C3725 /* APReverseGeocoding.h */,
 				A72C0B451ADE6477003C3725 /* APReverseGeocoding.m */,
@@ -154,6 +171,17 @@
 				A72C0B4D1ADE6A68003C3725 /* countries.geo.json */,
 			);
 			path = GeoJSON;
+			sourceTree = "<group>";
+		};
+		A72C0B5C1ADE7D35003C3725 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				A72C0B5D1ADE7D35003C3725 /* APPolygon.h */,
+				A72C0B5E1ADE7D35003C3725 /* APPolygon.m */,
+				A72C0B601ADE8642003C3725 /* APCountryCodeImporter.h */,
+				A72C0B611ADE8642003C3725 /* APCountryCodeImporter.m */,
+			);
+			path = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72C0B621ADE8642003C3725 /* APCountryCodeImporter.m in Sources */,
 				A72C0B221ADE640A003C3725 /* ViewController.m in Sources */,
+				A72C0B5F1ADE7D35003C3725 /* APPolygon.m in Sources */,
 				A72C0B1F1ADE640A003C3725 /* AppDelegate.m in Sources */,
 				A72C0B1C1ADE640A003C3725 /* main.m in Sources */,
 				A72C0B491ADE649E003C3725 /* APCountry.m in Sources */,
@@ -270,9 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72C0B641ADE86B5003C3725 /* APCountryCodeImporterTests.m in Sources */,
 				A72C0B501ADE6AEE003C3725 /* APReverseGeocodingTests.m in Sources */,
 				A72C0B361ADE640B003C3725 /* APReverseGeocodingExampleTests.m in Sources */,
 				A72C0B4B1ADE6618003C3725 /* APCountryTests.m in Sources */,
+				A72C0B591ADE7764003C3725 /* APPolygonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = APReverseGeocodingExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -401,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = APReverseGeocodingExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
