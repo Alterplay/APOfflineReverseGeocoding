@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding.svg?branch=master)](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding)
+[![Build Status](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding.svg?branch=master)](https://travis-ci.org/Alterplay/APOfflineReverseGeocoding) [![Build Status](https://img.shields.io/badge/version-0.0.1-cacaca.svg)](https://github.com/Alterplay/APOfflineReverseGeocoding) [![Build Status](https://img.shields.io/badge/platform-ios%2Fosx-blue.svg)](https://github.com/Alterplay/APOfflineReverseGeocoding)
 
 ![teaser](/Screenshots/git-teaser-08.png)
 
