@@ -13,7 +13,6 @@
 		A72C0B251ADE640A003C3725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B231ADE640A003C3725 /* Main.storyboard */; };
 		A72C0B271ADE640A003C3725 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B261ADE640A003C3725 /* Images.xcassets */; };
 		A72C0B2A1ADE640A003C3725 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A72C0B281ADE640A003C3725 /* LaunchScreen.xib */; };
-		A72C0B361ADE640B003C3725 /* APReverseGeocodingExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */; };
 		A72C0B461ADE6477003C3725 /* APReverseGeocoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B451ADE6477003C3725 /* APReverseGeocoding.m */; };
 		A72C0B491ADE649E003C3725 /* APCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B481ADE649E003C3725 /* APCountry.m */; };
 		A72C0B4B1ADE6618003C3725 /* APCountryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B4A1ADE6618003C3725 /* APCountryTests.m */; };
@@ -50,7 +49,6 @@
 		A72C0B291ADE640A003C3725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A72C0B2F1ADE640B003C3725 /* APReverseGeocodingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APReverseGeocodingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72C0B341ADE640B003C3725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APReverseGeocodingExampleTests.m; sourceTree = "<group>"; };
 		A72C0B441ADE6477003C3725 /* APReverseGeocoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APReverseGeocoding.h; sourceTree = "<group>"; };
 		A72C0B451ADE6477003C3725 /* APReverseGeocoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APReverseGeocoding.m; sourceTree = "<group>"; };
 		A72C0B471ADE649E003C3725 /* APCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCountry.h; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 		A72C0B321ADE640B003C3725 /* APReverseGeocodingExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A72C0B351ADE640B003C3725 /* APReverseGeocodingExampleTests.m */,
 				A72C0B4A1ADE6618003C3725 /* APCountryTests.m */,
 				A72C0B581ADE7764003C3725 /* APPolygonTests.m */,
 				A72C0B631ADE86B5003C3725 /* APCountryCodeImporterTests.m */,
@@ -304,7 +301,6 @@
 			files = (
 				A72C0B641ADE86B5003C3725 /* APCountryCodeImporterTests.m in Sources */,
 				A72C0B501ADE6AEE003C3725 /* APReverseGeocodingTests.m in Sources */,
-				A72C0B361ADE640B003C3725 /* APReverseGeocodingExampleTests.m in Sources */,
 				A72C0B4B1ADE6618003C3725 /* APCountryTests.m in Sources */,
 				A72C0B591ADE7764003C3725 /* APPolygonTests.m in Sources */,
 			);

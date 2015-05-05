@@ -16,6 +16,8 @@
 
 @implementation APCountryCodeImporterTests
 
+#pragma mark - Code
+
 - (void)testUSImported
 {
     APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"USA"];
@@ -28,8 +30,7 @@
 {
     APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:nil];
     NSDictionary *info = [builder build];
-    NSString *code = info[APCountryInfoBuilderISO31661Alpha2Key];
-    XCTAssertTrue(code == nil);
+    XCTAssertTrue(info == nil);
 }
 
 - (void)testUnknownCodeHandled
@@ -38,6 +39,16 @@
     NSDictionary *info = [builder build];
     NSString *code = info[APCountryInfoBuilderISO31661Alpha2Key];
     XCTAssertTrue(code == nil);
+}
+
+#pragma mark - Currency
+
+- (void)testUAHImported
+{
+    APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"UKR"];
+    NSDictionary *info = [builder build];
+    NSString *code = info[APCountryInfoBuilderCurrencyCode];
+    XCTAssertTrue([code isEqualToString:@"UAH"]);
 }
 
 @end

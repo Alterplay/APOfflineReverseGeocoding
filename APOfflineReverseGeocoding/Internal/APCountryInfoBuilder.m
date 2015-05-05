@@ -11,7 +11,10 @@
 @interface APCountryInfoBuilder ()
 
 /* Represents the country code */
-@property (nonatomic, copy, readwrite) NSString *code;
+@property (nonatomic, copy) NSString *code;
+
+/* Represents country locale from code */
+@property (nonatomic, strong) NSLocale *countryLocale;
 
 @end
 
@@ -44,9 +47,15 @@
     if (shortCode) {
         [dictionary setObject:shortCode forKey:APCountryInfoBuilderISO31661Alpha2Key];
     }
+    
     NSString *localizedName = [self _importLocalizedCountryName];
     if (localizedName) {
         [dictionary setObject:localizedName forKey:APCountryInfoBuilderLocalizedNameKey];
+    }
+    
+    NSString *currencyCode = [self _importCurrencyCode];
+    if (currencyCode) {
+        [dictionary setObject:currencyCode forKey:APCountryInfoBuilderCurrencyCode];
     }
     return [dictionary copy];
 }
@@ -55,9 +64,13 @@
 
 - (NSString *)_import2DigitsCode
 {
-    NSString *identifier = [NSLocale localeIdentifierFromComponents: @{NSLocaleCountryCode: self.code}];
-    NSLocale *locale = [NSLocale localeWithLocaleIdentifier:identifier];
-    NSString *countryCode = [locale objectForKey: NSLocaleCountryCode];
+    NSString *countryCode = [self.countryLocale objectForKey: NSLocaleCountryCode];
+    return countryCode;
+}
+
+- (NSString *)_importCurrencyCode
+{
+    NSString *countryCode = [self.countryLocale objectForKey: NSLocaleCurrencyCode];
     return countryCode;
 }
 
@@ -69,5 +82,15 @@
     return localizedCountryName;
 }
 
+#pragma mark - Accessors
+
+- (NSLocale *)countryLocale
+{
+    if (!_countryLocale) {
+        NSString *identifier = [NSLocale localeIdentifierFromComponents: @{NSLocaleCountryCode: self.code}];
+        _countryLocale = [NSLocale localeWithLocaleIdentifier:identifier];
+    }
+    return _countryLocale;
+}
 
 @end
