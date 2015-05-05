@@ -14,12 +14,20 @@ APCountry *country = [reverseGeocoding geocodeCountryWithCoordinate:coordinate];
 NSLog(@"%@", country.code);
 NSLog(@"%@", country.shortCode);
 NSLog(@"%@", country.name);
+NSLog(@"%@", country.localizedName);
+NSLog(@"%@", country.currencyCode);
+NSLog(@"%@", country.currencySymbol);
+NSLog(@"%@", country.calendar);
 ```
 Output:
 ```
 UKR
 UA
 Ukraine
+Україна
+UAH
+UAH
+<__NSCFCalendar: 0x7fbe2366db50>
 ```
 ### Algorithm
 
