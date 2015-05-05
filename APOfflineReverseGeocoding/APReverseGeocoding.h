@@ -32,7 +32,7 @@
 /**
  *  Designated initializer.
  *
- *  @param url NSURL. Sett +geocodingWithGeoJSONURL for details
+ *  @param url NSURL. See +geocodingWithGeoJSONURL for details
  *
  *  @return APReverseGeocoding
  */

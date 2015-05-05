@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "APCountryCodeImporter.h"
+#import "APCountryInfoBuilder.h"
 
 @interface APCountryCodeImporterTests : XCTestCase
 
@@ -18,19 +18,25 @@
 
 - (void)testUSImported
 {
-    NSString *code = [APCountryCodeImporter importShortCountryCodeWithCode:@"USA"];
+    APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"USA"];
+    NSDictionary *info = [builder build];
+    NSString *code = info[APCountryInfoBuilderISO31661Alpha2Key];
     XCTAssertTrue([code isEqualToString:@"US"]);
 }
 
 - (void)testNILCodeHandled
 {
-    NSString *code = [APCountryCodeImporter importShortCountryCodeWithCode:nil];
+    APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:nil];
+    NSDictionary *info = [builder build];
+    NSString *code = info[APCountryInfoBuilderISO31661Alpha2Key];
     XCTAssertTrue(code == nil);
 }
 
 - (void)testUnknownCodeHandled
-{
-    NSString *code = [APCountryCodeImporter importShortCountryCodeWithCode:@"USadsdasA"];
+{    
+    APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"UsadadaaA"];
+    NSDictionary *info = [builder build];
+    NSString *code = info[APCountryInfoBuilderISO31661Alpha2Key];
     XCTAssertTrue(code == nil);
 }
 

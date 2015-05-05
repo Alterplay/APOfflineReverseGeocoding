@@ -7,7 +7,7 @@
 //
 
 #import "APCountry.h"
-#import "APCountryCodeImporter.h"
+#import "APCountryInfoBuilder.h"
 
 @implementation APCountry
 
@@ -21,8 +21,14 @@
     self = [super init];
     if (self) {
         _code = dictionary[@"id"];
-        _shortCode = [APCountryCodeImporter importShortCountryCodeWithCode:_code];
+        
         _name = dictionary[@"properties"][@"name"];
+        
+        APCountryInfoBuilder *infoBuilder = [APCountryInfoBuilder builderWithCountryCode:_code];
+        NSDictionary *countryInfo = [infoBuilder build];
+        
+        _shortCode = countryInfo[APCountryInfoBuilderISO31661Alpha2Key];
+        _localizedName = countryInfo[APCountryInfoBuilderLocalizedNameKey];
     }
     return self;
 }

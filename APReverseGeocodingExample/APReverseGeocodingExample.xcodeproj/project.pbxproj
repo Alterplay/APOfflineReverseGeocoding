@@ -23,7 +23,7 @@
 		A72C0B591ADE7764003C3725 /* APPolygonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B581ADE7764003C3725 /* APPolygonTests.m */; };
 		A72C0B5B1ADE7D0E003C3725 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72C0B5A1ADE7D0E003C3725 /* MapKit.framework */; };
 		A72C0B5F1ADE7D35003C3725 /* APPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B5E1ADE7D35003C3725 /* APPolygon.m */; };
-		A72C0B621ADE8642003C3725 /* APCountryCodeImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B611ADE8642003C3725 /* APCountryCodeImporter.m */; };
+		A72C0B621ADE8642003C3725 /* APCountryInfoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B611ADE8642003C3725 /* APCountryInfoBuilder.m */; };
 		A72C0B641ADE86B5003C3725 /* APCountryCodeImporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A72C0B631ADE86B5003C3725 /* APCountryCodeImporterTests.m */; };
 /* End PBXBuildFile section */
 
@@ -62,9 +62,10 @@
 		A72C0B5A1ADE7D0E003C3725 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A72C0B5D1ADE7D35003C3725 /* APPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPolygon.h; sourceTree = "<group>"; };
 		A72C0B5E1ADE7D35003C3725 /* APPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPolygon.m; sourceTree = "<group>"; };
-		A72C0B601ADE8642003C3725 /* APCountryCodeImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCountryCodeImporter.h; sourceTree = "<group>"; };
-		A72C0B611ADE8642003C3725 /* APCountryCodeImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountryCodeImporter.m; sourceTree = "<group>"; };
+		A72C0B601ADE8642003C3725 /* APCountryInfoBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APCountryInfoBuilder.h; sourceTree = "<group>"; };
+		A72C0B611ADE8642003C3725 /* APCountryInfoBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountryInfoBuilder.m; sourceTree = "<group>"; };
 		A72C0B631ADE86B5003C3725 /* APCountryCodeImporterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APCountryCodeImporterTests.m; sourceTree = "<group>"; };
+		A7A79BB61AF8C88700879625 /* APCountryInfoBuilderDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APCountryInfoBuilderDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,10 +177,11 @@
 		A72C0B5C1ADE7D35003C3725 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				A7A79BB61AF8C88700879625 /* APCountryInfoBuilderDefines.h */,
 				A72C0B5D1ADE7D35003C3725 /* APPolygon.h */,
 				A72C0B5E1ADE7D35003C3725 /* APPolygon.m */,
-				A72C0B601ADE8642003C3725 /* APCountryCodeImporter.h */,
-				A72C0B611ADE8642003C3725 /* APCountryCodeImporter.m */,
+				A72C0B601ADE8642003C3725 /* APCountryInfoBuilder.h */,
+				A72C0B611ADE8642003C3725 /* APCountryInfoBuilder.m */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -286,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72C0B621ADE8642003C3725 /* APCountryCodeImporter.m in Sources */,
+				A72C0B621ADE8642003C3725 /* APCountryInfoBuilder.m in Sources */,
 				A72C0B221ADE640A003C3725 /* ViewController.m in Sources */,
 				A72C0B5F1ADE7D35003C3725 /* APPolygon.m in Sources */,
 				A72C0B1F1ADE640A003C3725 /* AppDelegate.m in Sources */,
@@ -493,6 +495,7 @@
 				A72C0B3B1ADE640B003C3725 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A72C0B3C1ADE640B003C3725 /* Build configuration list for PBXNativeTarget "APReverseGeocodingExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +504,7 @@
 				A72C0B3E1ADE640B003C3725 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
