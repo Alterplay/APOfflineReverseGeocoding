@@ -27,6 +27,9 @@
     XCTAssertEqual(country.code, countryId);
     XCTAssertTrue([country.shortCode isEqualToString:country.shortCode]);
     XCTAssertEqual(country.name, countryName);
+    XCTAssertTrue([country.calendar.calendarIdentifier isEqualToString:@"gregorian"]);
+    XCTAssertTrue([country.currencyCode isEqualToString:@"USD"]);
+    XCTAssertTrue([country.currencySymbol isEqualToString:@"US$"]);
 }
 
 @end

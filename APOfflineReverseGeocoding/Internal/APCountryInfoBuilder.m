@@ -55,7 +55,17 @@
     
     NSString *currencyCode = [self _importCurrencyCode];
     if (currencyCode) {
-        [dictionary setObject:currencyCode forKey:APCountryInfoBuilderCurrencyCode];
+        [dictionary setObject:currencyCode forKey:APCountryInfoBuilderCurrencyCodeKey];
+    }
+    
+    NSString *currencySymbol = [self _importCurrencySymbol];
+    if (currencySymbol) {
+        [dictionary setObject:currencySymbol forKey:APCountryInfoBuilderCurrencySymbolKey];
+    }
+    
+    NSCalendar *calendar = [self _importCalendar];
+    if (calendar) {
+        [dictionary setObject:calendar forKey:APCountryInfoBuilderCalendarKey];
     }
     return [dictionary copy];
 }
@@ -64,14 +74,22 @@
 
 - (NSString *)_import2DigitsCode
 {
-    NSString *countryCode = [self.countryLocale objectForKey: NSLocaleCountryCode];
-    return countryCode;
+    return [self.countryLocale objectForKey: NSLocaleCountryCode];
 }
 
 - (NSString *)_importCurrencyCode
 {
-    NSString *countryCode = [self.countryLocale objectForKey: NSLocaleCurrencyCode];
-    return countryCode;
+    return [self.countryLocale objectForKey: NSLocaleCurrencyCode];
+}
+
+- (NSString *)_importCurrencySymbol
+{
+    return [self.countryLocale objectForKey:NSLocaleCurrencySymbol];
+}
+
+- (NSCalendar *)_importCalendar
+{
+    return [self.countryLocale objectForKey:NSLocaleCalendar];
 }
 
 - (NSString *)_importLocalizedCountryName

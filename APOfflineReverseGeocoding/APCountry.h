@@ -41,6 +41,15 @@
 /* Represents country name in current locale */
 @property (nonatomic, copy, readonly) NSString *localizedName;
 
+/* Represents country currency code */
+@property (nonatomic, copy, readonly) NSString *currencyCode;
+
+/* Represents country currency symbol */
+@property (nonatomic, copy, readonly) NSString *currencySymbol;
+
+/* Represents country calendar */
+@property (nonatomic, strong, readonly) NSCalendar *calendar;
+
 @end
 
 @interface APCountry (Unavailable)

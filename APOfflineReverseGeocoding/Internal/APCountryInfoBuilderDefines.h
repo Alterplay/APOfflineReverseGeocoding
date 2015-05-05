@@ -12,6 +12,8 @@
 
 #endif
 
-static NSString * const APCountryInfoBuilderISO31661Alpha2Key = @"APCountryInfoBuilderISO31661Alpha2Key";
-static NSString * const APCountryInfoBuilderLocalizedNameKey  = @"APCountryInfoBuilderLocalizedNameKey";
-static NSString * const APCountryInfoBuilderCurrencyCode      = @"APCountryInfoBuilderCurrencyCode";
+static NSString * const APCountryInfoBuilderISO31661Alpha2Key   = @"APCountryInfoBuilderISO31661Alpha2Key";
+static NSString * const APCountryInfoBuilderLocalizedNameKey    = @"APCountryInfoBuilderLocalizedNameKey";
+static NSString * const APCountryInfoBuilderCurrencyCodeKey     = @"APCountryInfoBuilderCurrencyCodeKey";
+static NSString * const APCountryInfoBuilderCurrencySymbolKey   = @"APCountryInfoBuilderCurrencySymbolKey";
+static NSString * const APCountryInfoBuilderCalendarKey         = @"APCountryInfoBuilderCalendarKey";

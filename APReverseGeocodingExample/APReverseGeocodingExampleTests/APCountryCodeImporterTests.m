@@ -23,7 +23,13 @@
     APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"USA"];
     NSDictionary *info = [builder build];
     NSString *code = info[APCountryInfoBuilderISO31661Alpha2Key];
+    NSString *currencyCode = info[APCountryInfoBuilderCurrencyCodeKey];
+    NSString *currencySymbol = info[APCountryInfoBuilderCurrencySymbolKey];
+    NSCalendar *calendar = info[APCountryInfoBuilderCalendarKey];
     XCTAssertTrue([code isEqualToString:@"US"]);
+    XCTAssertTrue([currencyCode isEqualToString:@"USD"]);
+    XCTAssertTrue([currencySymbol isEqualToString:@"US$"]);
+    XCTAssertTrue([calendar.calendarIdentifier isEqualToString:@"gregorian"]);
 }
 
 - (void)testNILCodeHandled
@@ -35,20 +41,17 @@
 
 - (void)testUnknownCodeHandled
 {    
-    APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"UsadadaaA"];
+    APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"vcsadadaaA"];
     NSDictionary *info = [builder build];
-    NSString *code = info[APCountryInfoBuilderISO31661Alpha2Key];
-    XCTAssertTrue(code == nil);
+    XCTAssertTrue(info[APCountryInfoBuilderCurrencyCodeKey] == nil);
 }
 
-#pragma mark - Currency
-
-- (void)testUAHImported
+- (void)testImportPerformance
 {
-    APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"UKR"];
-    NSDictionary *info = [builder build];
-    NSString *code = info[APCountryInfoBuilderCurrencyCode];
-    XCTAssertTrue([code isEqualToString:@"UAH"]);
+    [self measureBlock:^{
+        APCountryInfoBuilder *builder = [APCountryInfoBuilder builderWithCountryCode:@"USA"];
+        [builder build];
+    }];
 }
 
 @end

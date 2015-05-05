@@ -20,15 +20,19 @@
 {
     self = [super init];
     if (self) {
+        /* Set default values */
         _code = dictionary[@"id"];
-        
         _name = dictionary[@"properties"][@"name"];
         
+        /* Extract additional info from the code */
         APCountryInfoBuilder *infoBuilder = [APCountryInfoBuilder builderWithCountryCode:_code];
         NSDictionary *countryInfo = [infoBuilder build];
         
         _shortCode = countryInfo[APCountryInfoBuilderISO31661Alpha2Key];
         _localizedName = countryInfo[APCountryInfoBuilderLocalizedNameKey];
+        _currencyCode = countryInfo[APCountryInfoBuilderCurrencyCodeKey];
+        _currencySymbol = countryInfo[APCountryInfoBuilderCurrencySymbolKey];
+        _calendar = countryInfo[APCountryInfoBuilderCalendarKey];
     }
     return self;
 }
