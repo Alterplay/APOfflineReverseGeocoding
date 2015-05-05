@@ -94,9 +94,8 @@
 
 - (NSString *)_importLocalizedCountryName
 {
-    NSLocale *locale = [NSLocale currentLocale];
-    NSString *countryCode = [locale objectForKey: NSLocaleCountryCode];
-    NSString *localizedCountryName = [locale displayNameForKey:NSLocaleCountryCode value:countryCode];
+    NSString *countryCode = [self.countryLocale objectForKey: NSLocaleCountryCode];
+    NSString *localizedCountryName = [self.countryLocale displayNameForKey:NSLocaleCountryCode value:countryCode];
     return localizedCountryName;
 }
 

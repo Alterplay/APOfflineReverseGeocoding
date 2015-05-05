@@ -14,6 +14,9 @@
 
 @property (nonatomic, strong) APReverseGeocoding *reverseGeocoding;
 @property (strong, nonatomic) IBOutlet UILabel *countryNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countryLocalizedNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countryCurrencyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countryCalendarLabel;
 
 @end
 
@@ -32,6 +35,9 @@
     CLLocationCoordinate2D centre = [mapView centerCoordinate];
     APCountry *country = [self.reverseGeocoding geocodeCountryWithCoordinate:centre];
     self.countryNameLabel.text = country.name;
+    self.countryLocalizedNameLabel.text = country.localizedName;
+    self.countryCurrencyLabel.text = [NSString stringWithFormat:@"%@(%@)", country.currencyCode, country.currencySymbol];
+    self.countryCalendarLabel.text = country.calendar.calendarIdentifier;
 }
 
 @end
