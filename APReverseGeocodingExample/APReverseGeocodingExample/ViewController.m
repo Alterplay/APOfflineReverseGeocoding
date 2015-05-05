@@ -38,6 +38,14 @@
     self.countryLocalizedNameLabel.text = country.localizedName;
     self.countryCurrencyLabel.text = [NSString stringWithFormat:@"%@(%@)", country.currencyCode, country.currencySymbol];
     self.countryCalendarLabel.text = country.calendar.calendarIdentifier;
+    
+    NSLog(@"%@", country.code);
+    NSLog(@"%@", country.shortCode);
+    NSLog(@"%@", country.name);
+    NSLog(@"%@", country.localizedName);
+    NSLog(@"%@", country.currencyCode);
+    NSLog(@"%@", country.currencySymbol);
+    NSLog(@"%@", country.calendar);
 }
 
 @end
