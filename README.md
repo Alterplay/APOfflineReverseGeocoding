@@ -5,6 +5,13 @@
 # APOfflineReverseGeocoding
 Offline reverse geocoding library written in Objective-C
 
+### Installation
+
+```
+pod 'APOfflineReverseGeocoding'
+```
+Note: we like CocoaPods and suggest you to like it as well, but you can always just drag'n'drop "APOfflineReverseGeocoding" folder into your project.
+
 ### Usage
 ```objc
 CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(48.296054999999996, 31.223209000000058);
