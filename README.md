@@ -47,6 +47,10 @@ Checkout example project at APReverseGeocodingExample folder.
 
 ![image](/Screenshots/3.png)
 
+### History
+
+[Releases](https://github.com/Alterplay/APOfflineReverseGeocoding/releases)
+
 ### Contribution
 
 Feel free to place issues and pull requests.
