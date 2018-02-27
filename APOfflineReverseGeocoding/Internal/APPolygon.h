@@ -33,8 +33,6 @@
 /**
  *  Checks if polygon contains given point
  *
- *  @param point CGPoint
- *
  *  @return contains point result BOOL
  */
 - (BOOL)containsPoint:(CGPoint)point;
@@ -45,8 +43,6 @@
 
 /**
  *  Checks if polygon contains given location
- *
- *  @param point CGPoint
  *
  *  @return contains location result BOOL
  */
