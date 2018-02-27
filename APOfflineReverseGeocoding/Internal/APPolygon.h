@@ -33,7 +33,9 @@
 /**
  *  Checks if polygon contains given point
  *
- *  @return contains point result BOOL
+ *  @param point CGPoint
+ *
+ *  @return contains point BOOL
  */
 - (BOOL)containsPoint:(CGPoint)point;
 
@@ -44,7 +46,9 @@
 /**
  *  Checks if polygon contains given location
  *
- *  @return contains location result BOOL
+ *  @param location CLLocationCoordinate2D
+ *
+ *  @return contains location BOOL
  */
 - (BOOL)containsLocation:(CLLocationCoordinate2D)location;
 
