@@ -35,7 +35,7 @@
  *
  *  @param point CGPoint
  *
- *  @return APPolygon
+ *  @return contains point result BOOL
  */
 - (BOOL)containsPoint:(CGPoint)point;
 
@@ -48,7 +48,7 @@
  *
  *  @param point CGPoint
  *
- *  @return APPolygon
+ *  @return contains location result BOOL
  */
 - (BOOL)containsLocation:(CLLocationCoordinate2D)location;
 
